@@ -16,6 +16,9 @@ class GroceryApp extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <Text>
+          I am in a container
+        </Text>
       </View>
     );
   }

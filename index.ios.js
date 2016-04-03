@@ -3,6 +3,7 @@
  * https://github.com/facebook/react-native
  */
 const Firebase = require('firebase');
+const styles = require('./styles.js')
 
 import React, {
   AppRegistry,
@@ -23,12 +24,5 @@ class GroceryApp extends React.Component {
     );
   }
 }
-
-var styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#f2f2f2',
-    flex: 1,
-  },
-});
 
 AppRegistry.registerComponent('GroceryApp', () => GroceryApp);

@@ -24,6 +24,11 @@ class GroceryApp extends Component {
       })
     };
   }
+  componentDidMount() {
+    this.setState({
+      dataSource: this.state.dataSource.cloneWithRows([{ title: 'Pizza' }])
+    })
+  }
   _renderItem(item) {
     return (
       <ListItem item={item} onPress={() => {}} />

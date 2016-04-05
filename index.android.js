@@ -16,6 +16,14 @@ import React, {
 } from 'react-native';
 
 class GroceryApp extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      dataSource: new ListView.DataSource({
+        rowHasChanged: (row1, row2) => row1 !== row2,
+      })
+    };
+  }
   _renderItem(item) {
     return (
       <ListItem item={item} onPress={() => {}} />

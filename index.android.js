@@ -2,6 +2,10 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  */
+ const StatusBar = require('./components/StatusBar');
+ const ActionButton = require('./components/ActionButton');
+ const ListItem = require('./components/ListItem');
+ const { AppRegistry, StyleSheet, Text, View, ListView, AlertIOS } = React;
 
 import React, {
   AppRegistry,

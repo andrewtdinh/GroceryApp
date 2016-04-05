@@ -16,18 +16,25 @@ import React, {
 } from 'react-native';
 
 class GroceryApp extends Component {
+  _renderItem(item) {
+    return (
+      <ListItem item={item} onPress={() => {}} />
+    );
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
-        </Text>
+
+        <StatusBar title="Grocery List" />
+
+        <ListView
+          dataSource={this.state.dataSource}
+          renderRow={this._renderItem.bind(this)}
+          style={styles.listview}/>
+
+        <ActionButton title="Add" onPress={() => {}} />
+
       </View>
     );
   }

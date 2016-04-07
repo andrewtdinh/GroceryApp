@@ -8,6 +8,7 @@ const StatusBar = require('./components/StatusBar');
 const ActionButton = require('./components/ActionButton');
 const ListItem = require('./components/ListItem');
 
+this.itemsRef = new Firebase("<MY-FIREBASE-APP>/items");
 
 import React, {
   AppRegistry,

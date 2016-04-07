@@ -8,7 +8,7 @@ const StatusBar = require('./components/StatusBar');
 const ActionButton = require('./components/ActionButton');
 const ListItem = require('./components/ListItem');
 
-this.itemsRef = new Firebase("https://react-lua.firebaseio.com/items");
+
 
 import React, {
   AppRegistry,
@@ -30,6 +30,7 @@ class GroceryApp extends Component {
         rowHasChanged: (row1, row2) => row1 !== row2,
       })
     };
+    this.itemsRef = new Firebase("https://react-lua.firebaseio.com/items");
   }
   componentDidMount() {
     this.setState({

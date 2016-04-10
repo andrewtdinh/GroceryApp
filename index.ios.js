@@ -33,9 +33,7 @@ class GroceryApp extends Component {
     this.itemsRef = new Firebase("https://react-lua.firebaseio.com/items");
   }
   componentDidMount() {
-    this.setState({
-      dataSource: this.state.dataSource.cloneWithRows([{ title: 'Pizza' }])
-    })
+    this.listenForItems(this.itemsRef);
   }
   _renderItem(item) {
     return (

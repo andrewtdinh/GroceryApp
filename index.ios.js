@@ -20,8 +20,6 @@ import React, {
   View
 } from 'react-native';
 
-// var { AppRegistry, StyleSheet, Text, View, ListView, AlertIOS } = React;
-
 class GroceryApp extends Component {
   constructor(props) {
     super(props);

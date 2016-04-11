@@ -84,7 +84,7 @@ class GroceryApp extends Component {
           renderRow={this._renderItem.bind(this)}
           style={styles.listview}/>
 
-        <ActionButton title="Add" onPress={() => {}} />
+        <ActionButton title="Add" onPress={this._addItem.bind(this)} />
 
       </View>
     );

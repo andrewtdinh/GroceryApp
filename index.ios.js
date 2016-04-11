@@ -41,6 +41,22 @@ class GroceryApp extends Component {
     );
   }
 
+  _addItem() {
+    AlertIOS.alert(
+      'Add New Item',
+      null,
+      [
+        {
+          text: 'Add',
+          onPress: (text) => {
+            this.itemsRef.push({ title: text })
+          }
+        },
+      ],
+      'plain-text'
+    );
+  }
+
   listenForItems(itemsRef) {
     itemsRef.on('value', (snap) => {
       // get children as an array
